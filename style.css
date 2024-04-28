@@ -1,0 +1,171 @@
+@import url(https://fonts.google.com/specimen/Young+Serif);
+@import url(https://fonts.google.com/specimen/Outfit);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 40px;
+    font-family: 'Outfit', 'Young-serif';
+    background-color:hsl(30, 54%, 90%);
+}
+.container {
+    width: 70% ;
+    height: 100%;
+    padding: 30px;
+    margin:  auto;
+    background-color: #fff;
+    align-content: center;
+    text-align: left;
+    border-radius: 10px;
+    color: hsl(30, 10%, 34%);
+}
+
+h1{
+    padding-top: 15px;
+}
+.p1-text{
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+.time{
+    content: " ";
+    padding: 15px;
+    margin-top: 15px;
+    padding-left: 40px;
+    width: auto;
+    height: 120px;
+    border-radius: 10px;
+    background-color: hsl(330, 100%, 98%);
+}
+
+h3{
+    margin-left: -1px;
+    padding-bottom: 5px;
+    color: hsl(331, 46%, 38%) ;
+}
+.ingredient{
+    content: " ";
+    padding-top: 10px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+
+}
+h2{
+    padding-bottom: 5px;
+    color: hsl(14, 45%, 36%);
+}
+
+hr{
+    margin: 20px;
+    width:-100%;
+    text-align:left;
+    margin-left:-15px;
+    margin-right: -4px;
+}
+
+#nutr{
+    padding: 5px;
+}
+
+.nut-text{
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+ul li {
+    list-style-position: inside;
+    padding-top: 3px;
+    font-size: 15px;
+}
+
+ol li{
+    list-style-position: inside;
+}
+
+ol {
+    margin:0 0 1.5em;
+    padding:0;
+    counter-reset:item;
+  }
+   
+  ol>li {
+    margin:0;
+    padding:0 0 0 2.5em;
+    text-indent:-2em;
+    list-style-type:none;
+    counter-increment:item;
+  }
+   
+  ol>li:before {
+    display:inline-block;
+    width:1.5em;
+    /* padding-right:10px; */
+    font-weight:bold;
+    text-align:center;
+    content:counter(item) ".";
+  }
+  
+li::marker{
+    color: hsl(30, 10%, 34%);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:last-child td {
+    border-bottom: none; 
+}
+
+td:nth-child(2) {
+    color: hsl(14, 45%, 36%); 
+}
+
+img{
+    width: 800px;
+    border-radius: 20px;
+    max-width: 99%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.attribution {
+    padding-top: 30px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 768px){
+    .ingredient,.nut-text, ul li, ol li{
+        font-size: 14px !important;
+    }
+    hr{
+        display: block;
+        height: 1px;
+        border: none;
+        background-color: #f6f6f6;
+        margin: 10px auto;
+    }
+    #recipe{
+        max-width: 90vw;
+    }
+    #directions{
+        column-count: 1;
+    }
+}
