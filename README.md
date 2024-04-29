@@ -23,7 +23,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![](assets/images/Web capture_29-4-2024_141413_127.0.0.1.jpeg)
+![](/assets/images/Web capture_29-4-2024_141413_127.0.0.1.jpeg)
 
 
 
